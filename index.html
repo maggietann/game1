@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="./main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mazeless Runner</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div id="title_screen">Welcome to Mazeless Runner! Press any key to play.</div>
+  <button onclick="instructions()" id="infobutton">How to play</button>
+  <button onclick="patchNotes()" id="patchNoteButton">
+    View latest patch notes
+  </button>
+  <button onclick="wasd()" id="wasdbutton">
+    Toggle WASD controls
+  </button>
+  <script>
+    function instructions() {
+      document.getElementById("info").innerHTML = "You control the alien in this game." + "</br>" + "Use the arrow keys or WASD to move around." + '</br>' + "Your goal is to keep collecting the sun for as long as possible without dying." + "</br>" + "The game will get harder as you progress." + "</br>" + "Everything that isn't the sun kills you."
+    }
+
+    function patchNotes() {
+      document.getElementById("patch_notes").innerHTML =
+        "Mazeless Runner 2.2 Patch Notes" +
+        '</br>' +
+        '</br>' +
+        "<b>General</b>" +
+        "<ul>" +
+        "<li>Changed the visuals, as you can see</li>" +
+        "<li>Added the option to toggle between WASD controls and arrow keys</li>" +
+        "</ul>"+
+        "</br>"+
+        "<b>Things I've been thinking about adding</b>"+
+        "<ul>"+
+          "<li>A pause button and a proper title screen</li>"+
+          "<li>Something that saves your high score</li>"+
+          "<li>Making the monkey's bananas temporary obstacles (they disappear when something goes over them)</li>"+
+          "<li>Powerups (shield, extra life, maybe the ability to destroy obstacles)</li>"+
+        "</ul>"
+          
+    }
+
+  </script>
+  <p id="info"></p>
+  <p id="patch_notes"></p>
+  <p id="wasdToggle">WASD is now OFF.</p>
+  <div id="everything">
+    <div id="game_over">Game Over</div>
+    <div id="ur_dead">ur dead m8.</div>
+    <div id="softlocked">Softlocked</div>
+    <div id="beCareful">be careful next time.</div>
+    <div id="godMode">God mode activated.</div>
+    <div id="output_holder"></div>
+    <div id="score"></div>
+    <div id="lives"></div>
+  </div>
+
+</body>
+
+</html>
