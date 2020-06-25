@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Source+Sans+Pro|Indie+Flower|Modak|Nova+Square|Righteous&display=swap');
+
+#title_screen {
+  font-family: 'Fredoka One', cursive;
+  color: aquamarine;
+  border: 5px double aqua;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 10px;
+  text-align: center;
+  font-size: 45px;
+  background-color: navy;
+}
+
+#everything {
+  border: 5px double aqua;
+  display: flex;
+  flex-direction: column;
+  width: 99.8%;
+  height: 99.8%;
+  margin: auto;
+}
+
+#output_holder {
+  font-family: 'Righteous', cursive;
+  padding: 10px;
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  font-size: 108%;
+  background-image: linear-gradient(rgb(37, 130, 206), rgb(8, 226, 154));
+}
+
+body {
+  background-color: rgb(19, 57, 100);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#score {
+  color: aquamarine;
+  display: block;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  margin: auto;
+}
+
+#lives {
+  color: aquamarine;
+  display: block;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  margin: auto;
+}
+#wasdToggle {
+  color: aquamarine;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+#info {
+  color: aquamarine;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+}
+
+#game_over {
+  font-family: 'Nova Square', cursive;
+  text-align: center;
+  font-size: 50px;
+  color: yellow;
+  display: none;
+}
+#ur_dead {
+  font-family: 'Nova Square', cursive;
+  text-align: center;
+  font-size: 16px;
+  color: yellow;
+  display: none;
+}
+#godMode{
+  font-family: "Righteous", cursive;
+  text-align: center;
+  font-size: 25px;
+  color: gold;
+  display: none;
+}
+
+button {
+  border-radius: 20px;
+  border: 3px solid aqua;
+  background-color: navy;
+  cursor: pointer;
+  font-family: "Righteous", cursive;
+  color: aquamarine;
+  font-size: 25px;
+}
+
+#patch_notes {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: aqua;
+}
+#softlocked{
+  text-align: center;
+  display: none;
+  font-family: "Nova Square", cursive;
+  font-size: 50px;
+  color: yellow;
+}
+#beCareful{
+  text-align: center;
+  display: none;
+  font-family: "Nova Square", cursive;
+  font-size: 16px;
+  color: yellow;
+}
